@@ -1,0 +1,20 @@
+#pragma once
+
+#define MASTER_LEFT
+
+#define USE_SERIAL_PD2
+
+#define IGNORE_MOD_TAP_INTERRUPT
+#define TAPPING_FORCE_HOLD
+#define PERMISSIVE_HOLD
+#define TAPPING_TERM 200
+
+#define LEADER_TIMEOUT 250
+#define LEADER_PER_KEY_TIMIN
+#define LEADER_NO_TIMEOUT
+
+#define MOUSEKEY_DELAY          0
+#define MOUSEKEY_INTERVAL       16
+#define MOUSEKEY_WHEEL_DELAY    0
+#define MOUSEKEY_MAX_SPEED      6
+#define MOUSEKEY_TIME_TO_MAX    64
