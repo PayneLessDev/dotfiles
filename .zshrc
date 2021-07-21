@@ -11,10 +11,11 @@ alias c='clear'
 alias h='history'
 alias t='time'
 alias x='exit'
-alias p='sudo pacman'
-alias rm='rm -i'
-alias cp='cp -i'
-alias mv='mv -i'
+alias p='sudo pacman -S'
+alias m='neomutt'
+alias rm='rm -Iv'
+alias cp='cp -iv'
+alias mv='mv -iv'
 alias cs='clear; ls'
 alias grep='grep --color'
 alias cat='bat'
@@ -83,3 +84,18 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 eval "$(starship init zsh)"
 
 alias config='/usr/bin/git --git-dir=/home/vafhudr/.dotfiles/ --work-tree=/home/vafhudr'
+
+HITSIZE=10000
+SAVEHIST=1000
+HISTFILE=~/.cache/zsh/history
+
+autoload -U compinit
+zstyle ":completion:*" menu select
+zmodload zsh/complist
+compinit
+
+bindkey -v
+export KEYTIMEOUT=1
+
+
+source /home/vafhudr/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
