@@ -1,0 +1,33 @@
+set realname = "Adam Payne"
+set from = "adam@paynelessdev.tech"
+set use_from = yes
+
+set smtp_pass =`pass show email`
+set imap_pass =`pass show email`
+
+set imap_user = "adam@paynelessdev.tech"
+set folder = "imaps://imap.paynelessdev.tech"
+set spoolfile = "+INBOX"
+
+set my_user = "adam@paynelessdev.tech"
+
+set smtp_authenticators = "login"
+set smtp_url = "smtp://$imap_user@smtp.paynelessdev.tech"
+set record = "+Sent"
+set smtp_authenticators = "login"
+set ssl_starttls = no
+set signature = "~/.signature"
+set timeout=10
+set sidebar_visible = yes
+
+set alias_file = "~/.mutt/aliases"
+set sort_alias = alias
+set reverse_alias = yes
+source $alias_file
+
+set fast_reply=yes
+set include=yes
+
+set editor = "vim"
+
+set imap_check_subscribed

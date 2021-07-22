@@ -2,6 +2,7 @@ if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ]; then
   [ -z "${TMUX}" ] && { tmux attach || tmux; } >/dev/null 2>&1
 fi
 export TERM=xterm-256color
+export EDITOR=vim
 ##Generic Aliases##
 alias g='git'
 alias r='ranger'
@@ -11,6 +12,7 @@ alias c='clear'
 alias h='history'
 alias t='time'
 alias x='exit'
+alias s='sudo'
 alias p='sudo pacman -S'
 alias m='neomutt'
 alias rm='rm -Iv'
@@ -47,7 +49,7 @@ alias svimrc='source ~/.vimrc'
 alias zshrc='vim ~/.zshrc'
 alias szshrc='source ~/.zshrc'
 alias tmuxrc='vim ~/.tmux.conf'
-alias stmuxrc='source ~/.tmux.conf'
+alias muttrc='vim ~/.muttrc'
 
 ##Functions##
 mkcd () {
