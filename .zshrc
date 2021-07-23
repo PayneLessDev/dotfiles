@@ -1,6 +1,6 @@
-if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ]; then
-  [ -z "${TMUX}" ] && { tmux attach || tmux; } >/dev/null 2>&1
-fi
+#if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ]; then
+#  [ -z "${TMUX}" ] && { tmux attach || tmux; } >/dev/null 2>&1
+#fi
 export TERM=xterm-256color
 export EDITOR=vim
 ##Generic Aliases##
@@ -14,11 +14,13 @@ alias t='time'
 alias x='exit'
 alias s='sudo'
 alias p='sudo pacman -S'
+alias j='journalctl -xe'
 alias m='neomutt'
 alias rm='rm -Iv'
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias cs='clear; ls'
+alias sys='systemctl'
 alias grep='grep --color'
 alias cat='bat'
 alias ping='ping -c 5'
@@ -50,6 +52,7 @@ alias zshrc='vim ~/.zshrc'
 alias szshrc='source ~/.zshrc'
 alias tmuxrc='vim ~/.tmux.conf'
 alias muttrc='vim ~/.muttrc'
+alias kittyrc='vim ~/.config/kitty/kitty.conf'
 
 ##Functions##
 mkcd () {

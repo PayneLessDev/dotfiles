@@ -67,6 +67,7 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 \| endif
 
 call plug#begin('~/.vim/plugged')
+    Plug 'fladson/vim-kitty'
     Plug 'mattn/emmet-vim'
     Plug 'mbbill/undotree'
     Plug 'tpope/vim-fugitive'
@@ -128,5 +129,5 @@ map <up> k
 map <right> l
 
 nnoremap <Leader><Space> :
-
+nnoremap <leader>g :G
 imap ,, <C-y>,
