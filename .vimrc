@@ -7,6 +7,7 @@
 "
 "===============================================================================
 syntax enable
+filetype plugin on
 "===============================================================================
 "          _
 " ___  ___| |_ ___
@@ -35,6 +36,16 @@ set noshowmode
 set signcolumn=yes
 set noshowcmd  " to get rid of display of last command
 set shortmess+=F  " to get rid of the file name displayed in the command line bar
+set termguicolors
+set bg=dark
+set splitbelow splitright
+set wildmode=longest,list,full
+set wildmenu
+set clipboard=unnamedplus
+set cursorline
+set omnifunc=syntaxcomplete#Complete
+set spell
+set spelllang=en_au
 "===============================================================================
 "       _             _
 " _ __ | |_   _  __ _(_)_ __  ___
@@ -56,6 +67,7 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 \| endif
 
 call plug#begin('~/.vim/plugged')
+    Plug 'fladson/vim-kitty'
     Plug 'mattn/emmet-vim'
     Plug 'mbbill/undotree'
     Plug 'tpope/vim-fugitive'
@@ -70,25 +82,25 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'ledger/vim-ledger'
     Plug 'lervag/vimtex'
-    Plug 'nanotech/jellybeans.vim'
     Plug 'nathanaelkane/vim-indent-guides'
-    Plug 'ervandew/supertab'
+    Plug 'morhetz/gruvbox'
+    "Plug 'ycm-core/YouCompleteMe'
     Plug 'othree/html5.vim'
     Plug 'jiangmiao/auto-pairs'
     Plug 'gorodinskiy/vim-coloresque'
+    Plug 'ervandew/supertab'
+
 call plug#end()
 
 "===============================================================================
 "===============================================================================
 "===============================================================================
 
-let g:airline_theme='jellybeans'
-colorscheme jellybeans
+let g:airline_theme='gruvbox'
+colorscheme gruvbox
 highlight clear SignColumn
 
 autocmd BufWritePre * :%s/\s\+$//e
-autocmd FileType html set omnifunc=htmlcomplete#CompleteTags
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 let g:indent_guides_enable_on_vim_startup = 1
 let g:undotree_WindowLayout = 1
@@ -111,4 +123,11 @@ noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 
+map <left> h
+map <down> j
+map <up> k
+map <right> l
+
+nnoremap <Leader><Space> :
+nnoremap <leader>g :G
 imap ,, <C-y>,
