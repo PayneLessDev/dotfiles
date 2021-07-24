@@ -1,0 +1,16 @@
+[user]
+	email = contact@adam-payne.info
+	name = Adam Payne
+[core]
+	editor = vim
+[color]
+	ui = true
+[alias]
+    s = status -sb
+    l = log --oneline
+    d = diff
+    c = commit -m
+    a = add .
+    p = push
+    co = checkout
+    pom = push origin master

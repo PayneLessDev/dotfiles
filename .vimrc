@@ -41,7 +41,7 @@ set bg=dark
 set splitbelow splitright
 set wildmode=longest,list,full
 set wildmenu
-set clipboard=unnamedplus
+set clipboard+=unnamedplus
 set cursorline
 set omnifunc=syntaxcomplete#Complete
 set spell

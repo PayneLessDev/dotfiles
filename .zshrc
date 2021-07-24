@@ -88,7 +88,6 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 eval "$(starship init zsh)"
 
-alias config='/usr/bin/git --git-dir=/home/vafhudr/.dotfiles/ --work-tree=/home/vafhudr'
 
 HITSIZE=10000
 SAVEHIST=1000
