@@ -4,6 +4,7 @@
 export TERM=xterm-256color
 export EDITOR=vim
 ##Generic Aliases##
+# test
 alias g='git'
 alias r='ranger'
 alias v='vim'
