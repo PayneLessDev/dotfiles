@@ -104,7 +104,4 @@ compinit
 bindkey -v
 export KEYTIMEOUT=1
 
-#ignore
-
 source /home/vafhudr/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
