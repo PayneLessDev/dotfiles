@@ -24,11 +24,14 @@ alias vi='vim'
 alias cs='clear; ls'
 alias sys='systemctl'
 alias grep='grep --color'
+alias ytd='youtube-dl'
+alias gtd='gallery-dl'
 alias cat='bat'
 alias ping='ping -c 5'
 alias mkdir='mkdir -pv'
 alias htop='sudo htop'
 alias pup='sudo pacman -Syu'
+alias open='xdg-open'
 #ls commands
 alias ls='exa -h --icons --group-directories-first'
 alias ld='exa -ldh .* --icons --group-directories-first'
@@ -56,6 +59,7 @@ alias szshrc='source ~/.zshrc'
 alias tmuxrc='vim ~/.tmux.conf'
 alias muttrc='vim ~/.muttrc'
 alias kittyrc='vim ~/.config/kitty/kitty.conf'
+
 
 ##Functions##
 mkcd () {
