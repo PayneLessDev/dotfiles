@@ -1,9 +1,11 @@
-rsync -av ~/.zshrc ~/Projects/dotfiles
-rsync -av ~/.Xresources ~/Projects/dotfiles
-rsync -av ~/.vimrc ~/Projects/dotfiles
-rsync -av ~/.tmux.conf ~/Projects/dotfiles
-rsync -av ~/.signature ~/Projects/dotfiles
-rsync -av ~/.muttrc ~/Projects/dotfiles
-rsync -av ~/.gitconfig ~/Projects/dotfiles
-rsync -av ~/.bashrc ~/Projects/dotfiles
-rsync -av ~/.config/kitty/kitty.conf ~/Projects/dotfiles
+#!/usr/bin/env bash
+
+files=(".zshrc" ".Xresources" ".vimrc" ".tmux.conf" ".signature" ".muttrc" ".gitconfig" ".bashrc" ".config/kitty/kitty.conf" ".config/ranger/rc.conf" ".config/starship.toml")
+
+for i in ${files[*]}; do
+    rsync -av ~/$i ~/Projects/dotfiles
+done
+
+git add *
+git commit -c "Auto Backup"
+git push origin master
