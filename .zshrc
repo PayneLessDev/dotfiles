@@ -59,7 +59,10 @@ alias szshrc='source ~/.zshrc'
 alias tmuxrc='vim ~/.tmux.conf'
 alias muttrc='vim ~/.muttrc'
 alias kittyrc='vim ~/.config/kitty/kitty.conf'
-
+#SSH
+alias jellyfin='ssh jellyfin'
+alias pihole='ssh pihole'
+alias payneless='ssh payneless'
 
 ##Functions##
 mkcd () {
