@@ -32,6 +32,7 @@ alias mkdir='mkdir -pv'
 alias htop='sudo htop'
 alias pup='sudo pacman -Syu'
 alias open='xdg-open'
+alias clip='xclip -selection clipboard'
 #ls commands
 alias ls='exa -h --icons --group-directories-first'
 alias ld='exa -ldh .* --icons --group-directories-first'
