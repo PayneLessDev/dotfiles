@@ -46,6 +46,8 @@ set cursorline
 set omnifunc=syntaxcomplete#Complete
 set spell
 set spelllang=en_au
+set colorcolumn=80
+set scrolloff=20
 "===============================================================================
 "       _             _
 " _ __ | |_   _  __ _(_)_ __  ___
@@ -127,6 +129,9 @@ map <left> h
 map <down> j
 map <up> k
 map <right> l
+
+inoremap , ,<c-g>u
+inoremap . .<c-g>u
 
 nnoremap <Leader><Space> :
 nnoremap <leader>g :G
