@@ -14,21 +14,27 @@ alias v='vim'
 alias q='exit'
 alias c='clear'
 alias h='history'
-alias inst='sudo pacman -S'
 alias m='neomutt'
+alias sys='systemctl'
+alias ytd='youtube-dl'
+alias gtd='gallery-dl'
+alias inst='sudo pacman -S'
+alias update='sudo pacman -Syu'
+################################################################################
+# Defaults
+################################################################################
 alias rm='rm -Iv'
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias cs='clear; ls'
-alias sys='systemctl'
+alias wget='wget -c'
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
-alias ytd='youtube-dl'
-alias gtd='gallery-dl'
 alias ping='ping -c 5'
 alias mkdir='mkdir -pv'
+
 alias htop='sudo htop'
-alias update='sudo pacman -Syu'
+
 alias open='xdg-open'
 alias clip='xclip -selection clipboard'
 ################################################################################
@@ -41,6 +47,7 @@ alias cat='bat'
 ################################################################################
 alias udot='source /home/vafhudr/Projects/dotfiles/scripts/updatedotfiles.sh'
 alias sdot='source /home/vafhudr/Projects/dotfiles/scripts/source.sh'
+alias gdot='source /home/vafhudr/Projects/dotfiles/scripts/gitdotfile.sh'
 ################################################################################
 #                              ls commands                                     #
 ################################################################################
@@ -79,7 +86,9 @@ alias kittyrc='vim ~/.config/kitty/kitty.conf'
 ################################################################################
 # Task warrior
 ################################################################################
+
 alias t='task'
+alias cal='task calendar'
 ################################################################################
 #                                    SSH                                       #
 ################################################################################

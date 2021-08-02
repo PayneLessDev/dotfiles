@@ -4,3 +4,5 @@ cd ~/Projects/dotfiles
 git add --all
 git commit -m "Scripted update"
 git push origin master
+
+figlet -f big Config Pushed | lolcat
