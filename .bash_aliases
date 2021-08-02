@@ -6,7 +6,7 @@
 #          | |_) | (_| \__ \ | | |  / ____ \| | | (_| \__ \  __/\__ \          #
 #          |____/ \__,_|___/_| |_| /_/    \_\_|_|\__,_|___/\___||___/          #
 ################################################################################
-#                             Generic Aliases                                  #
+#                                Shortcuts                                     #
 ################################################################################
 alias g='git'
 alias r='ranger'
@@ -14,20 +14,17 @@ alias v='vim'
 alias q='exit'
 alias c='clear'
 alias h='history'
-alias t='time'
-alias p='sudo pacman -S'
+alias inst='sudo pacman -S'
 alias m='neomutt'
 alias rm='rm -Iv'
 alias cp='cp -iv'
 alias mv='mv -iv'
-alias vi='vim'
 alias cs='clear; ls'
 alias sys='systemctl'
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias ytd='youtube-dl'
 alias gtd='gallery-dl'
-alias cat='bat'
 alias ping='ping -c 5'
 alias mkdir='mkdir -pv'
 alias htop='sudo htop'
@@ -35,9 +32,15 @@ alias update='sudo pacman -Syu'
 alias open='xdg-open'
 alias clip='xclip -selection clipboard'
 ################################################################################
+# Replacements
+################################################################################
+alias vi='vim'
+alias cat='bat'
+################################################################################
 # Scripts
 ################################################################################
 alias udot='source /home/vafhudr/Projects/dotfiles/scripts/updatedotfiles.sh'
+alias sdot='source /home/vafhudr/Projects/dotfiles/scripts/source.sh'
 ################################################################################
 #                              ls commands                                     #
 ################################################################################
@@ -69,11 +72,14 @@ alias 777='chmod -R 777'
 alias vimrc='vim ~/.vimrc'
 alias svimrc='source ~/.vimrc'
 alias zshrc='vim ~/.zshrc'
-alias szshrc='source ~/.zshrc'
 alias bashrc='vim ~/.bashrc'
 alias tmuxrc='vim ~/.tmux.conf'
 alias muttrc='vim ~/.muttrc'
 alias kittyrc='vim ~/.config/kitty/kitty.conf'
+################################################################################
+# Task warrior
+################################################################################
+alias t='task'
 ################################################################################
 #                                    SSH                                       #
 ################################################################################
