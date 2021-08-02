@@ -18,3 +18,4 @@ for i in ${files[*]}; do
     rsync -havP ~/$i ~/Projects/dotfiles
 done
 
+figlet -f big Config Synced | lolcat
