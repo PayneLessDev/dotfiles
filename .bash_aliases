@@ -46,6 +46,7 @@ alias cat='bat'
 alias udot='source /home/vafhudr/Projects/dotfiles/scripts/updatedotfiles.sh'
 alias sdot='source /home/vafhudr/Projects/dotfiles/scripts/source.sh'
 alias gdot='source /home/vafhudr/Projects/dotfiles/scripts/gitdotfile.sh'
+alias edot='source /home/vafhudr/Projects/dotfiles/scripts/editdotfiles.sh'
 ################################################################################
 #                              ls commands                                     #
 ################################################################################
@@ -75,7 +76,6 @@ alias 777='chmod -R 777'
 #                              Config shortcuts                                #
 ################################################################################
 alias vimrc='vim ~/.vimrc'
-alias svimrc='source ~/.vimrc'
 alias zshrc='vim ~/.zshrc'
 alias bashrc='vim ~/.bashrc'
 alias tmuxrc='vim ~/.tmux.conf'
