@@ -32,9 +32,7 @@ alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 alias ping='ping -c 5'
 alias mkdir='mkdir -pv'
-
 alias htop='sudo htop'
-
 alias open='xdg-open'
 alias clip='xclip -selection clipboard'
 ################################################################################
@@ -86,9 +84,10 @@ alias kittyrc='vim ~/.config/kitty/kitty.conf'
 ################################################################################
 # Task warrior
 ################################################################################
-
 alias t='task'
+alias ta='task add'
 alias cal='task calendar'
+
 ################################################################################
 #                                    SSH                                       #
 ################################################################################
