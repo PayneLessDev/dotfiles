@@ -15,6 +15,7 @@ alias q='exit'
 alias c='clear'
 alias h='history'
 alias m='neomutt'
+alias hs='history | grep'
 alias sys='systemctl'
 alias ytd='youtube-dl'
 alias gtd='gallery-dl'
@@ -26,7 +27,7 @@ alias update='sudo pacman -Syu'
 alias rm='rm -Iv'
 alias cp='cp -iv'
 alias mv='mv -iv'
-alias cs='clear; ls'
+alias cl='clear; ls'
 alias wget='wget -c'
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
@@ -40,6 +41,7 @@ alias clip='xclip -selection clipboard'
 ################################################################################
 alias vi='vim'
 alias cat='bat'
+alias du='ncdu'
 ################################################################################
 # Scripts
 ################################################################################
@@ -72,15 +74,6 @@ alias 644='chmod -R 644'
 alias 666='chmod -R 666'
 alias 755='chmod -R 755'
 alias 777='chmod -R 777'
-################################################################################
-#                              Config shortcuts                                #
-################################################################################
-alias vimrc='vim ~/.vimrc'
-alias zshrc='vim ~/.zshrc'
-alias bashrc='vim ~/.bashrc'
-alias tmuxrc='vim ~/.tmux.conf'
-alias muttrc='vim ~/.muttrc'
-alias kittyrc='vim ~/.config/kitty/kitty.conf'
 ################################################################################
 # Task warrior
 ################################################################################
