@@ -14,7 +14,8 @@ files=(
     ".config/ranger/rc.conf"
     ".config/starship.toml")
 
-for i in ${files[*]}; do
+for i in ${files[*]};
+do
     rsync -havP ~/$i ~/Projects/dotfiles
 done
 
