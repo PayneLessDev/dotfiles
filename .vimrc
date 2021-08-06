@@ -22,7 +22,7 @@ set number
 set relativenumber
 set noerrorbells
 set ts=4 sts=4 sw=4
-set expandtab
+set expandtab "Converts Tabs to Spaces"
 set smartindent
 set nowrap
 set smartcase
