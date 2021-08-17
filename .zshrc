@@ -1,6 +1,7 @@
 #if [ -x "$(command -v tmux)" ] && [ -n "${DISPLAY}" ]; then
 #  [ -z "${TMUX}" ] && { tmux attach || tmux; } >/dev/null 2>&1
 #fi
+
 export TERM=xterm-256color
 export EDITOR=vim
 
