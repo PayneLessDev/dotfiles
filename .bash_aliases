@@ -80,8 +80,8 @@ alias 777='chmod -R 777'
 alias t='task'
 alias ta='task add'
 alias td='task done'
+alias tl='task list'
 alias cal='task calendar'
-
 ################################################################################
 #                                    SSH                                       #
 ################################################################################

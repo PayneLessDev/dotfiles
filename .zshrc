@@ -2,6 +2,8 @@
 #  [ -z "${TMUX}" ] && { tmux attach || tmux; } >/dev/null 2>&1
 #fi
 
+task calendar
+
 export TERM=xterm-256color
 export EDITOR=vim
 

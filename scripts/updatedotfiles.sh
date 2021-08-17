@@ -10,6 +10,7 @@ files=(
     ".gitconfig"
     ".bashrc"
     ".bash_aliases"
+    ".taskrc"
     ".config/kitty/kitty.conf"
     ".config/ranger/rc.conf"
     ".config/starship.toml")
