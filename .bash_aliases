@@ -20,6 +20,7 @@ alias sys='systemctl'
 alias ytd='youtube-dl'
 alias gtd='gallery-dl'
 alias inst='sudo pacman -S'
+alias clock='watch -t -n1 "date +%T|figlet -f big"'
 alias update='sudo pacman -Syu'
 ################################################################################
 # Defaults

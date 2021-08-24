@@ -31,8 +31,8 @@ data.location=~/.task
 
 
 
-report.simple.description=Simple list of open tasks by project
-report.simple.columns=id,project,description.count
-report.simple.labels=ID,Proj,Desc
-report.simple.sort=project+\/,entry+
-report.simple.filter=status:pending
+report.today.description=Due Today
+report.today.columns=id,description.count
+report.today.labels=ID,Desc
+report.today.sort=project+\/,entry+
+report.today.filter=due:today
