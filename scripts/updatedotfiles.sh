@@ -13,7 +13,9 @@ files=(
     ".taskrc"
     ".config/kitty/kitty.conf"
     ".config/ranger/rc.conf"
-    ".config/starship.toml")
+    ".config/starship.toml"
+    ".config/conky/conky.conf")
+
 
 for i in ${files[*]};
 do
