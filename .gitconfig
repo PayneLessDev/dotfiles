@@ -8,10 +8,15 @@
 	ui = true
 [alias]
     s = status -sb
-    l = log --oneline
+    l = log --oneline --graph --decorate
     d = diff
-    c = commit -m
-    a = add .
+    c = commit -am
+    a = commit --amend -m
     p = push
     co = checkout
-    pom = push origin master
+    ss = stash save
+    sl = stash list
+    sp = stash pop
+    sd = stash drop
+    sa = stash apply
+    pom = push origin main
