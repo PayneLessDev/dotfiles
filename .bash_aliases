@@ -56,7 +56,7 @@ alias edot='source /home/vafhudr/Projects/dotfiles/scripts/editdotfiles.sh'
 alias ls='exa -h --icons --group-directories-first'
 alias ld='exa -ldh .* --icons --group-directories-first'
 alias ll='exa -lha --icons --group-directories-first'
-alias lt='exa --tree --level=2 --icons --group-directories-first'
+alias lt='exa --tree --level=6 --icons --group-directories-first'
 ################################################################################
 #                              cd commands                                     #
 ################################################################################
