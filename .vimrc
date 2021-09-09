@@ -91,6 +91,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'jiangmiao/auto-pairs'
     Plug 'gorodinskiy/vim-coloresque'
     Plug 'ervandew/supertab'
+    Plug 'turbio/bracey.vim'
 
 call plug#end()
 
@@ -136,3 +137,6 @@ inoremap . .<c-g>u
 nnoremap <Leader><Space> :
 nnoremap <leader>g :G
 imap ,, <C-y>,
+
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
