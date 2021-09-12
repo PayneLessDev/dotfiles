@@ -1,7 +1,9 @@
 [user]
 	email = adam@paynelessdev.tech
 	name = Adam Payne
-	signingkey = D0B839F7F9B4BF685EC5FFCEF03304DFF6C606D9
+	signingkey = F03304DFF6C606D9
+[init]
+    defaultBranch = main
 [core]
 	editor = vim
 [color]
@@ -20,3 +22,5 @@
     sd = stash drop
     sa = stash apply
     pom = push origin main
+[commit]
+	gpgsign = true
