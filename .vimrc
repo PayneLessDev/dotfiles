@@ -92,6 +92,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'gorodinskiy/vim-coloresque'
     Plug 'ervandew/supertab'
     Plug 'turbio/bracey.vim'
+    Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
+
 
 call plug#end()
 
