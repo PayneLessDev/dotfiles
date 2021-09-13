@@ -48,6 +48,7 @@ set spell
 set spelllang=en_au
 set colorcolumn=80
 set scrolloff=20
+set list lcs=tab:\|\
 "===============================================================================
 "       _             _
 " _ __ | |_   _  __ _(_)_ __  ___
@@ -84,14 +85,13 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf.vim'
     Plug 'ledger/vim-ledger'
     Plug 'lervag/vimtex'
-    Plug 'nathanaelkane/vim-indent-guides'
-    Plug 'morhetz/gruvbox'
     "Plug 'ycm-core/YouCompleteMe'
+    Plug 'dense-analysis/ale'
     Plug 'othree/html5.vim'
     Plug 'jiangmiao/auto-pairs'
-    Plug 'gorodinskiy/vim-coloresque'
     Plug 'ervandew/supertab'
     Plug 'turbio/bracey.vim'
+    Plug 'cocopon/iceberg.vim'
     Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
 
 
@@ -101,8 +101,8 @@ call plug#end()
 "===============================================================================
 "===============================================================================
 
-let g:airline_theme='gruvbox'
-colorscheme gruvbox
+let g:airline_theme='iceberg'
+colorscheme iceberg
 highlight clear SignColumn
 
 autocmd BufWritePre * :%s/\s\+$//e
@@ -136,9 +136,6 @@ map <right> l
 inoremap , ,<c-g>u
 inoremap . .<c-g>u
 
-nnoremap <Leader><Space> :
 nnoremap <leader>g :G
 imap ,, <C-y>,
 
-vnoremap J :m '>+1<CR>gv=gv
-vnoremap K :m '<-2<CR>gv=gv
